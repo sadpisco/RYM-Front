@@ -17,7 +17,7 @@ export function allCharacters(){
     const endPoint = `/characters`;
     return async (dispatch) => {
         try {
-            const { data } = await axios.get(endPoint);
+            const { data } = await axios(endPoint);
             dispatch({
                 type: ALL_CHARACTERS,
                 payload: data.foundCharacters
@@ -32,7 +32,7 @@ export function firstCharacters(){
     const endPoint = `/firstCharacters`;
     return async (dispatch) => {
         try {
-            const { data } = await axios.get(endPoint);
+            const { data } = await axios(endPoint);
             dispatch({
                 type: FIRST_CHARACTERS,
                 payload: data,
@@ -64,7 +64,7 @@ export function allLocations(){
     const endPoint = `/locations`;
     return async (dispatch) => {
         try {
-            const { data } = await axios.get(endPoint);
+            const { data } = await axios(endPoint);
             dispatch({
                 type: ALL_LOCATIONS,
                 payload: data.foundLocations
@@ -81,7 +81,7 @@ export function allEpisodes(){
     const endPoint = `/episodes`;
     return async (dispatch) => {
         try {
-            const { data } = await axios.get(endPoint);
+            const { data } = await axios(endPoint);
             dispatch({
                 type: ALL_EPISODES,
                 payload: data.foundEpisodes
