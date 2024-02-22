@@ -8,6 +8,8 @@ import './index.css'
 import axios from 'axios';
 
 //Deploying front
+axios.defaults.baseURL = 'https://rym-back-pgat.onrender.com';
+// axios.defaults.baseURL = 'http://localhost:3015';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store = {store}>

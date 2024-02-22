@@ -14,7 +14,7 @@ export const ALL_EPISODES = 'ALL_EPISODES';
 
 //CHARACTERS FUNCTIONS
 export function allCharacters(){
-    const endPoint = `http://localhost:3015/characters`;
+    const endPoint = `/characters`;
     return async (dispatch) => {
         try {
             const { data } = await axios.get(endPoint);
@@ -29,7 +29,7 @@ export function allCharacters(){
     };
 };
 export function firstCharacters(){
-    const endPoint = `http://localhost:3015/firstCharacters`;
+    const endPoint = `/firstCharacters`;
     return async (dispatch) => {
         try {
             const { data } = await axios.get(endPoint);
@@ -61,7 +61,7 @@ export function addCharacter(id){
 
 //LOCATIONS
 export function allLocations(){
-    const endPoint = `http://localhost:3015/locations`;
+    const endPoint = `/locations`;
     return async (dispatch) => {
         try {
             const { data } = await axios.get(endPoint);
@@ -78,7 +78,7 @@ export function allLocations(){
 
 //EPISODES
 export function allEpisodes(){
-    const endPoint = `http://localhost:3015/episodes`;
+    const endPoint = `/episodes`;
     return async (dispatch) => {
         try {
             const { data } = await axios.get(endPoint);
