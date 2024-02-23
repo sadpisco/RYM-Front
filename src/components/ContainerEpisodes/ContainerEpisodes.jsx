@@ -5,10 +5,9 @@ import styles from './ContainerEpisodes.module.css';
 
 
 const ContainerEpisodes = ({epToRender, season}) => {
-    console.log(epToRender);
   return (
     <div className={styles.containerEpisodes}>
-      {epToRender?.map((element) => <CardEpisodes epToRender={element} />)}
+      {epToRender?.map((element) => <CardEpisodes epToRender={element} key = {element.id}/>)}
     </div>
   )
 }

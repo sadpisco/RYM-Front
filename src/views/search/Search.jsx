@@ -38,7 +38,6 @@ export default function Search() {
         };
     };
     const deleteChar = function(id){
-        console.log(id);
         let newArr = charsToRender.filter((element) => element.id !== id);
         return setChars(newArr);
     };
@@ -51,7 +50,6 @@ export default function Search() {
             return setFavorites(result);
         };
     };
-    console.log(estate);
     const renderFavs = function(){
         if (favorites.length === charsToRender.length){
             setChars(estate);

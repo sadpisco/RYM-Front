@@ -9,7 +9,6 @@ import Button from '@mui/material/Button';
 export default function Contact() {
     const form = useRef();
     const [ alert, setAlert ] = useState(false);
-    console.log(alert);
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs
