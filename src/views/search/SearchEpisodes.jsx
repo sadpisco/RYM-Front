@@ -24,7 +24,6 @@ export default function SearchEpisodes(){
         };
     })
     const epToRender = sorteada.filter(element => element.season == season);
-    console.log(episodes, epToRender);
     function handleNext (){
         if (season < 5){
             setSeason(season + 1);
@@ -60,7 +59,7 @@ export default function SearchEpisodes(){
                             <h1 className={styles.h1}>Season {season}</h1>
                             <button className={styles.paginationBtn} onClick={handleNext}>Next<NavigateNextIcon /></button>
                         </div>
-                        <ContainerEpisodes epToRender={epToRender} season={season} />
+                        <ContainerEpisodes epToRender={epToRender} />
                     </div>
                 </div>
                 <Footer />

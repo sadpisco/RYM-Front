@@ -8,7 +8,6 @@ const CardEpisodes = ({epToRender}) => {
   const [ detail, setDetail ] = useState(false);
   const clickHandler = function(){
     setDetail(!detail);
-    console.log(epToRender);
 };
 function renderImage (episodeImg){
   if(episodeImg){
