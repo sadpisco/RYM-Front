@@ -1,5 +1,5 @@
 import React from 'react'
-import CardEpisodes from '../cardEpisodes/CardEpisodes.jsx';
+import CardEpisodes from '../CardEpisodes/CardEpisodes';
 import styles from './ContainerEpisodes.module.css';
 
 
