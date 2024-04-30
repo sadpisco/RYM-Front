@@ -6,7 +6,7 @@
 
 .navContainer{
     z-index: 3;
-    min-width: 100vw;
+    width: 100vw;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -72,7 +72,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-right: 7vw;
+    margin-right: 15vw;
     width: 22%;
     gap: 2vw;
 } 

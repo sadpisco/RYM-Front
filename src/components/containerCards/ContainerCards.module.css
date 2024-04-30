@@ -1,5 +1,5 @@
 .holeContainer{
-    width: 90vw;
+    width: max-content;
     
 }
 .divContainer{
@@ -9,8 +9,8 @@
     align-items: center;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin: 0rem 10rem;
-    gap: 0rem;
+    padding: 5vh;
+    gap: 2rem;
 
 
 }

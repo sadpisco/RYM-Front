@@ -4,8 +4,8 @@
 .divFooter{
     width: 100%;
     position: static;
-    height: auto;
-    padding: 2vh;
+    max-height: 100vh;
+    padding: 5vh;
     /* height: 140px; */
     bottom: 0px;
     left: 0px;
@@ -114,8 +114,7 @@
         width: 100%;
     }
     .childrenDivThree{
-        visibility: hidden;
-        position: absolute;
+        width: 100%;
     }
 }
 .aLink:hover{
